@@ -6,5 +6,6 @@ document.addEventListener("DOMContentLoaded", function(){
     buttonText.addEventListener("click", function(){
         array.push(inputText.value);
         localStorage.setItem("array", array);
+        inputText.value = "";
     });
 });
