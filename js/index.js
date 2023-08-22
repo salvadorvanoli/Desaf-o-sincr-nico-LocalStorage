@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", function(){
     let buttonText = document.getElementById("buttonText");
     
     buttonText.addEventListener("click", function(){
-        let guardar = localStorage.setItem("texto", inputText.value);
+        localStorage.setItem("texto", inputText.value);
     });
 });
