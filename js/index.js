@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(){
     let inputText = document.getElementById("inputText");
     let buttonText = document.getElementById("buttonText");
+    let array = [];
     
     buttonText.addEventListener("click", function(){
-        let guardar = localStorage.setItem("texto", inputText.value);
+        array.push(inputText.value);
+        localStorage.setItem("array", array);
     });
 });
